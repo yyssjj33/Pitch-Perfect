@@ -33,13 +33,6 @@
                                     <action selector="playFast:" destination="Hnh-Gb-bUt" eventType="touchUpInside" id="uVP-AS-oNc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBQ-Hy-ZaY">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="stop"/>
-                                <connections>
-                                    <action selector="stopAudio:" destination="Hnh-Gb-bUt" eventType="touchUpInside" id="PlV-sf-Iw7"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-Z9-UXz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="chipmunk"/>
@@ -61,30 +54,37 @@
                                     <action selector="playNormal:" destination="Hnh-Gb-bUt" eventType="touchUpInside" id="hpp-SF-z6T"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBQ-Hy-ZaY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="Hnh-Gb-bUt" eventType="touchUpInside" id="PlV-sf-Iw7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lVY-Z9-UXz" firstAttribute="top" secondItem="pIq-jC-2BX" secondAttribute="bottom" constant="67" id="5YR-AB-cul"/>
                             <constraint firstItem="12t-Qa-jHw" firstAttribute="top" secondItem="YFI-fA-4Cj" secondAttribute="bottom" constant="50" id="FY7-LA-t5N"/>
                             <constraint firstItem="RjL-D9-n3T" firstAttribute="top" secondItem="12t-Qa-jHw" secondAttribute="bottom" constant="67" id="G7H-pU-3rN"/>
-                            <constraint firstItem="YCe-X8-Ngd" firstAttribute="centerX" secondItem="44c-aP-Mf5" secondAttribute="centerX" id="Gek-vf-sx5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="12t-Qa-jHw" secondAttribute="trailing" constant="20" id="K3q-gF-gH5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QBQ-Hy-ZaY" secondAttribute="trailing" constant="76" id="Pnc-d3-4xV"/>
                             <constraint firstItem="lVY-Z9-UXz" firstAttribute="leading" secondItem="44c-aP-Mf5" secondAttribute="leadingMargin" constant="20" id="R6a-rn-MOw"/>
+                            <constraint firstItem="YCe-X8-Ngd" firstAttribute="leading" secondItem="44c-aP-Mf5" secondAttribute="leadingMargin" constant="76" id="ZbH-00-cud"/>
                             <constraint firstItem="pIq-jC-2BX" firstAttribute="leading" secondItem="44c-aP-Mf5" secondAttribute="leadingMargin" constant="20" id="bgs-7F-k3S"/>
-                            <constraint firstItem="QBQ-Hy-ZaY" firstAttribute="centerX" secondItem="44c-aP-Mf5" secondAttribute="centerX" id="bj1-Yq-Za7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RjL-D9-n3T" secondAttribute="trailing" constant="20" id="f8N-Wn-ZqV"/>
                             <constraint firstItem="Zeg-vj-1RM" firstAttribute="top" secondItem="QBQ-Hy-ZaY" secondAttribute="bottom" constant="29" id="n8w-Zr-Hks"/>
                             <constraint firstItem="pIq-jC-2BX" firstAttribute="top" secondItem="YFI-fA-4Cj" secondAttribute="bottom" constant="50" id="ofc-jZ-cbK"/>
-                            <constraint firstItem="QBQ-Hy-ZaY" firstAttribute="top" secondItem="YCe-X8-Ngd" secondAttribute="bottom" constant="30" id="qPy-If-7nc"/>
+                            <constraint firstItem="Zeg-vj-1RM" firstAttribute="top" secondItem="YCe-X8-Ngd" secondAttribute="bottom" constant="29" id="s4N-22-aXn"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pIq-jC-2BX"/>
                                 <exclude reference="12t-Qa-jHw"/>
-                                <exclude reference="QBQ-Hy-ZaY"/>
                                 <exclude reference="lVY-Z9-UXz"/>
                                 <exclude reference="RjL-D9-n3T"/>
                                 <exclude reference="YCe-X8-Ngd"/>
+                                <exclude reference="QBQ-Hy-ZaY"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="bgs-7F-k3S"/>
@@ -95,20 +95,20 @@
                                 <exclude reference="K3q-gF-gH5"/>
                                 <exclude reference="G7H-pU-3rN"/>
                                 <exclude reference="f8N-Wn-ZqV"/>
-                                <exclude reference="Gek-vf-sx5"/>
-                                <exclude reference="bj1-Yq-Za7"/>
-                                <exclude reference="qPy-If-7nc"/>
+                                <exclude reference="ZbH-00-cud"/>
+                                <exclude reference="Pnc-d3-4xV"/>
                                 <exclude reference="n8w-Zr-Hks"/>
+                                <exclude reference="s4N-22-aXn"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pIq-jC-2BX"/>
                                 <include reference="12t-Qa-jHw"/>
-                                <include reference="QBQ-Hy-ZaY"/>
                                 <include reference="lVY-Z9-UXz"/>
                                 <include reference="RjL-D9-n3T"/>
                                 <include reference="YCe-X8-Ngd"/>
+                                <include reference="QBQ-Hy-ZaY"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="bgs-7F-k3S"/>
@@ -119,10 +119,10 @@
                                 <include reference="K3q-gF-gH5"/>
                                 <include reference="G7H-pU-3rN"/>
                                 <include reference="f8N-Wn-ZqV"/>
-                                <include reference="Gek-vf-sx5"/>
-                                <include reference="bj1-Yq-Za7"/>
-                                <include reference="qPy-If-7nc"/>
+                                <include reference="ZbH-00-cud"/>
+                                <include reference="Pnc-d3-4xV"/>
                                 <include reference="n8w-Zr-Hks"/>
+                                <include reference="s4N-22-aXn"/>
                             </mask>
                         </variation>
                     </view>
@@ -256,7 +256,7 @@
         <image name="darthvader" width="100" height="100"/>
         <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
-        <image name="play" width="100" height="100"/>
+        <image name="play" width="50" height="50"/>
         <image name="slow" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
     </resources>
